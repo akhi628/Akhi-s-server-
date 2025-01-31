@@ -1,0 +1,53 @@
+  (Encapsulation + inheritance)
+
+class Employee{
+     private String Employee_name;
+     private int Employee_salary;
+     private int Employee_id;
+     
+     Employee(){
+         this.Employee_name="0";
+         this.Employee_salary=0 ;
+         this.Employee_id=0;
+     }
+     Employee(String n, int i,int j){
+         this.Employee_name="hemu+miyakholifa";
+         this.Employee_salary=100;
+         this.Employee_id=1307;
+     }
+    String  getEmployee_name(){
+         return Employee_name;
+     }
+     
+      int getEmployee_salary(){
+         return Employee_salary;
+     }
+     
+     int getEmployee_id(){
+         return Employee_id;
+     }
+     
+}
+class car extends Employee  {
+    private String name;
+    private int Registration_no;
+    private String model;
+    private int year;
+    
+    void display(){
+        System.out.println("Name:"+name);
+        System.out.println("Registration_no:"+ Registration_no);
+        System.out.println("Model:"+model);
+        System.out.println("Year:"+year);
+    }
+}
+ class Main{
+     public static void main(String[]agrs){
+         car p =new car();
+         p.display();
+         Employee E=new Employee("miyakholifa",5,1307 );
+         System.out.println("Employee_name:" + E.getEmployee_name());
+         System.out.println("Employee_salary:" +E.getEmployee_salary());
+         System.out.println("Employee_id:" +E.getEmployee_id());
+     }
+ }

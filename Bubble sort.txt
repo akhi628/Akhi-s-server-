@@ -1,0 +1,29 @@
+ 
+Write a C++ program Bubble sort
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int i,j,temp=0;
+    int arr[5]={6,-8,2,4,7};
+    for(i=0;i<5;i++){
+        for(j=i+1;j<5;j++){
+            if(arr[j]<arr[i]){
+                temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
+        }
+    }
+    
+    for(i=0; i<5; i++){
+        cout<<arr[i]<<" ";
+    }
+}
+
+output
+/tmp/DbdQE2kwHT.o
+-8 2 4 6 7 
+
+=== Code Execution Successful ===
